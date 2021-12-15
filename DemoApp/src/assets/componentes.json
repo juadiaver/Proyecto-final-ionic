@@ -1,0 +1,28 @@
+[  
+    {
+    "nombre":"Acoso Escolar",
+    "ruta":"/acoso-escolar",
+    "icono":"trash",
+    "color":"primary",
+    "descripcion":"Hablemos de acoso escolar",
+    "imagen":"https://statics-cuidateplus.marca.com/cms/styles/natural/azblob/bullying-colegio.jpg?itok=D9Pvzrfq"
+  },
+  {
+    "nombre":"CyberBulling",
+    "ruta":"/cyber-bulling",
+    "icono":"add",
+    "color":"success",
+    "descripcion":"Aqui colocamos la descripcion de la card",
+    "imagen":"https://cuidateplus.blob.core.windows.net/cms/images/aula-colegio.jpg"
+  },
+  {
+    "nombre":"Pide Ayuda",
+    "ruta":"/pide-ayuda",
+    "icono":"person-circle-outline",
+    "color":"danger",
+    "descripcion":"Aqui colocamos la descripcion de la card",
+    "imagen":"https://cuidateplus.blob.core.windows.net/cms/images/bullying.jpg"
+    
+  }
+  
+]    
