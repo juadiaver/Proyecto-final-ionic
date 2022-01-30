@@ -13,15 +13,20 @@ const routes: Routes = [
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'acoso-escolar',
-    loadChildren: () => import('./pages/acoso-escolar/acoso-escolar.module').then( m => m.AcosoEscolarPageModule)
-  },  {
+    path: 'bullying',
+    loadChildren: () => import('./pages/bullying/bullying.module').then( m => m.BullyingPageModule)
+  },
+  {
     path: 'cyber-bulling',
     loadChildren: () => import('./pages/cyber-bulling/cyber-bulling.module').then( m => m.CyberBullingPageModule)
   },
   {
-    path: 'pide-ayuda',
-    loadChildren: () => import('./pages/pide-ayuda/pide-ayuda.module').then( m => m.PideAyudaPageModule)
+    path: 'identidad-genero',
+    loadChildren: () => import('./pages/identidad-genero/identidad-genero.module').then( m => m.IdentidadGeneroPageModule)
+  },
+  {
+    path: 'violencia-genero',
+    loadChildren: () => import('./pages/violencia-genero/violencia-genero.module').then( m => m.ViolenciaGeneroPageModule)
   },
   {
     path: 'login',
@@ -34,7 +39,11 @@ const routes: Routes = [
   {
     path: 'contrasena-olvidada',
     loadChildren: () => import('./pages/contrasena-olvidada/contrasena-olvidada.module').then( m => m.ContrasenaOlvidadaPageModule)
+  },  {
+    path: 'inicio-correcto',
+    loadChildren: () => import('./pages/inicio-correcto/inicio-correcto.module').then( m => m.InicioCorrectoPageModule)
   },
+
 
 
   
