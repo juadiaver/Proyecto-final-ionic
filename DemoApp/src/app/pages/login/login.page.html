@@ -6,18 +6,25 @@
 <ion-content>
   <form>
     <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" 
+      [(ngModel)]="usuario.usuario"
+      required></ion-input>
     </ion-item>
     
     <ion-item lines="full">
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="password" 
+      [(ngModel)]="usuario.pwd"
+      required></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" expand="block">Login</ion-button>
+        <ion-button 
+        (click)="login()" 
+        expand="block"
+        [disabled]="!esValido">Login</ion-button>
         <a [routerLink]="['/contrasena-olvidada']" class="small-text">¿Olvidaste la contraseña?</a>
         <a [routerLink]="['/registro']" class="small-text">¿Aún no estás registrado?</a>
       </ion-col>

@@ -33,3 +33,8 @@ Alma: Ha realizado el desarrollo de la parte backend correspondiente los primero
 Alejandro: Ha editado la estética de la cabecera, el menú y el fondo de las páginas.
 20:25 17/01/2022
 Se comprueba mediante es uso de una app externa que el servidor funciona correctamente, se adjunta imagen.
+
+20:20 02/02/2022
+Juanjose: parte del servidor con base mongo realizado.
+
+20:45 06/02/2022

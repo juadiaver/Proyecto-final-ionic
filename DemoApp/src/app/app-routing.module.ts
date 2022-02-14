@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { EstaLogadoGuard } from './guards/esta-logado.guard';
 
 const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: 'logado',
     pathMatch: 'full'
+  },
+  {
+    path: 'logado',
+    loadChildren: () => import('./pages/logado/logado.module').then( m => m.LogadoPageModule),
+    canActivate: [EstaLogadoGuard]
   },
   {
     path: 'inicio',
@@ -39,10 +45,9 @@ const routes: Routes = [
   {
     path: 'contrasena-olvidada',
     loadChildren: () => import('./pages/contrasena-olvidada/contrasena-olvidada.module').then( m => m.ContrasenaOlvidadaPageModule)
-  },  {
-    path: 'inicio-correcto',
-    loadChildren: () => import('./pages/inicio-correcto/inicio-correcto.module').then( m => m.InicioCorrectoPageModule)
   },
+  
+
 
 
 
